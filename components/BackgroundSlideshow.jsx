@@ -61,12 +61,7 @@ export default function BackgroundSlideshow() {
         );
       })}
 
-      {/* Cinematic Vignette & Ambient Luxury Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/50 z-[2]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.1)_0%,rgba(0,0,0,0.65)_100%)] z-[3]" />
-      
-      {/* Subtle warm golden ambient tint */}
-      <div className="absolute inset-0 bg-[#3a1d10]/15 mix-blend-color z-[4]" />
+
     </div>
   );
 }

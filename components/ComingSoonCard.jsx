@@ -68,7 +68,7 @@ export default function ComingSoonCard() {
     };
 
     return (
-        <div className="relative w-full max-w-[420px] sm:max-w-[540px] md:max-w-[580px] mx-auto px-3 xs:px-4 sm:px-6">
+        <div className="relative w-full md:w-1/2 max-w-[420px] sm:max-w-[540px] md:max-w-[820px] mx-auto px-3 xs:px-4 sm:px-6">
             {/* Terracotta Hero Container */}
             <div
                 className="relative bg-[#a85e34] sm:bg-[#b3653b] text-white rounded-none sm:rounded-sm shadow-2xl px-6 py-8 xs:px-7 xs:py-10 sm:px-12 sm:py-12 md:p-14 transition-all duration-500 overflow-hidden"
@@ -86,18 +86,18 @@ export default function ComingSoonCard() {
                             alt="CHUNNIINDIA"
                             width={65}
                             height={65}
-                            className="w-[56px] md:w-32 h-auto object-contain mx-auto"
+                            className="w-[82px] md:w-36 h-auto object-contain mx-auto"
                             priority
                         />
                     </div>
 
                     {/* Section Heading - Exact 1 Line */}
-                    <h2 className="font-kannada text-[1.22rem] xs:text-[1.38rem] sm:text-2xl md:text-[1.85rem] tracking-[0.15em] sm:tracking-[0.2em] font-normal text-white uppercase mb-3 sm:mb-4 whitespace-nowrap">
+                    <h2 className="font-kannada text-[1.22rem] xs:text-[1.38rem] sm:text-2xl md:text-[1.85rem] text-white uppercase mb-3 sm:mb-4 whitespace-nowrap">
                         LAUNCHING SOON
                     </h2>
 
                     {/* Brand Description - Exact 3 Lines on Mobile */}
-                    <p className="text-[11.5px]  md:text-sm text-white/90 max-w-[315px] sm:max-w-[420px] mx-auto mb-6 sm:mb-8 text-center  font-helvetica   md:tracking-wide leading-[1.25] md:leading-[1.6]">
+                    <p className="text-[11.5px]  md:text-sm text-white/90 max-w-[490px]  mx-auto mb-6 sm:mb-8 text-center  font-helvetica tracking-wide md:tracking-[1px] leading-[1.25] ">
                         CHUNNIINDIA is getting ready to make its debut. Sign up
                         below to be the first to know about our launch, new
                         updates, and everything we&apos;re creating behind the
@@ -130,7 +130,7 @@ export default function ComingSoonCard() {
                 ) : (
                     <form
                         onSubmit={handleSubmit}
-                        className="w-full max-w-[340px] sm:max-w-[420px] mx-auto flex flex-col gap-2.5 sm:gap-3"
+                        className="w-full mx-auto flex md:flex-row flex-col gap-2.5"
                     >
                         {/* Email Input Field */}
                         <div className="relative w-full">
@@ -145,7 +145,7 @@ export default function ComingSoonCard() {
                                 placeholder="ENTER YOUR EMAIL"
                                 required
                                 disabled={status === "loading"}
-                                className="w-full font-helvetica h-11 sm:h-12 px-4 bg-transparent text-white placeholder-white/70 text-xs sm:text-sm tracking-widest uppercase border border-white/50 focus:border-white focus:outline-none transition-all duration-300 rounded-none text-left"
+                                className="w-full font-helvetica placeholder:font-helvetica h-11 sm:h-12 px-4 bg-transparent text-white placeholder-white/70 text-xs sm:text-sm tracking-widest uppercase border border-white/50 focus:border-white focus:outline-none transition-all duration-300 rounded-none text-left"
                             />
                         </div>
 
@@ -153,7 +153,7 @@ export default function ComingSoonCard() {
                         <button
                             type="submit"
                             disabled={status === "loading"}
-                            className="w-full h-11 sm:h-12 px-6 bg-[#f2e7dc] hover:bg-white text-[#1a1412] text-xs sm:text-sm font-medium uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-75 flex items-center justify-center cursor-pointer active:scale-[0.99] whitespace-nowrap rounded-none font-helvetica"
+                            className="w-full md:w-fit h-11 sm:h-12 px-5 bg-[#f2e7dc] hover:bg-white text-[#1a1412] text-xs sm:text-sm font-medium uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-75 flex items-center justify-center cursor-pointer active:scale-[0.99] whitespace-nowrap rounded-none font-helvetica"
                         >
                             {status === "loading" ? (
                                 <span className="flex items-center gap-2 font-helvetica">
@@ -163,7 +163,7 @@ export default function ComingSoonCard() {
                                     </span>
                                 </span>
                             ) : (
-                                <span className="tracking-widest">
+                                <span className="tracking-wider font-helvetica">
                                     KEEP ME POSTED
                                 </span>
                             )}
