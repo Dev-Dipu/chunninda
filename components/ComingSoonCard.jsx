@@ -97,7 +97,7 @@ export default function ComingSoonCard() {
                     </h2>
 
                     {/* Brand Description - Exact 3 Lines on Mobile */}
-                    <p className="text-[11.5px]  md:text-sm text-white/90 max-w-[315px] sm:max-w-[420px] mx-auto mb-6 sm:mb-8 text-center font-helvetica  md:tracking-wide leading-[1.6]">
+                    <p className="text-[11.5px]  md:text-sm text-white/90 max-w-[315px] sm:max-w-[420px] mx-auto mb-6 sm:mb-8 text-center  font-helvetica   md:tracking-wide leading-[1.25] md:leading-[1.6]">
                         CHUNNIINDIA is getting ready to make its debut. Sign up
                         below to be the first to know about our launch, new
                         updates, and everything we&apos;re creating behind the
