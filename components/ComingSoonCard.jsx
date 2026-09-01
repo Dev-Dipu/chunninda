@@ -71,7 +71,7 @@ export default function ComingSoonCard() {
         <div className="relative w-full md:w-1/2 max-w-[420px] sm:max-w-[540px] md:max-w-[820px] mx-auto px-3 xs:px-4 sm:px-6">
             {/* Terracotta Hero Container */}
             <div
-                className="relative bg-[#B56E3B] text-[#F3E9DC] rounded-none sm:rounded-sm shadow-2xl px-6 py-8 xs:px-7 xs:py-10 sm:px-12 sm:py-12 md:p-14 transition-all duration-500 overflow-hidden"
+                className="relative bg-[#B56E3B] text-[#F3E9DC] shadow-2xl px-6 py-8 xs:px-7 xs:py-10 sm:px-12 sm:py-12 md:p-14 transition-all duration-500 overflow-hidden"
                 style={{
                     boxShadow:
                         "0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(168, 94, 52, 0.35)",
@@ -145,7 +145,7 @@ export default function ComingSoonCard() {
                                 placeholder="ENTER YOUR EMAIL"
                                 required
                                 disabled={status === "loading"}
-                                className="w-full font-helvetica placeholder:font-helvetica h-11 sm:h-12 px-4 bg-transparent text-[#F3E9DC] placeholder-[#F3E9DC] 70 text-xs sm:text-sm tracking-widest uppercase border border-[#F3E9DC] 50 focus:border-[#F3E9DC] focus:outline-none transition-all duration-300 rounded-none text-left"
+                                className="w-full font-helvetica placeholder:font-helvetica h-11 sm:h-12 px-4 bg-transparent text-[#F3E9DC] placeholder-[#F3E9DC] text-xs sm:text-sm tracking-widest uppercase border border-[#F3E9DC]  focus:border-[#F3E9DC] focus:outline-none transition-all duration-300 rounded-none text-left"
                             />
                         </div>
 
