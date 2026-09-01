@@ -6,7 +6,7 @@ import ComingSoonCard from "@/components/ComingSoonCard";
 
 export default function HomePage() {
     return (
-        <main className="relative min-h-screen w-full flex flex-col justify-between items-center py-6 sm:py-8 px-3 xs:px-4 select-none overflow-hidden">
+        <main className="relative h-[100dvh] w-full flex flex-col justify-between items-center py-6 sm:py-8 px-3 xs:px-4 select-none overflow-hidden">
             {/* Background with morphing smooth transition slideshow */}
             <BackgroundSlideshow />
 
@@ -23,7 +23,7 @@ export default function HomePage() {
                     href="https://instagram.com/chunniindia"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-white/80 hover:text-white transition-opacity text-xs tracking-widest font-helvetica drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+                    className="flex items-center gap-1.5 text-white/80 hover:text-white transition-opacity text-xs tracking-widest font-helvetica"
                 >
                     <svg
                         className="w-3.5 h-3.5"
