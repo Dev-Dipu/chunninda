@@ -20,6 +20,8 @@
   --color-cream: var(--cream);
   --color-cream-soft: var(--cream-soft);
   --color-gold: var(--gold-accent);
+  --font-kannada: var(--font-kannada), sans-serif;
+  --font-helvetica: var(--font-helvetica), "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-cinzel: var(--font-cinzel), "Cinzel", Georgia, serif;
   --font-cormorant: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
   --font-montserrat: var(--font-montserrat), "Montserrat", -apple-system, sans-serif;
@@ -36,7 +38,15 @@ body {
   overflow-x: hidden;
 }
 
-/* Luxury Heading styles */
+/* Typography styles */
+.font-kannada {
+  font-family: var(--font-kannada), sans-serif;
+}
+
+.font-helvetica {
+  font-family: var(--font-helvetica), "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .font-cinzel {
   font-family: var(--font-cinzel), Georgia, serif;
 }
@@ -96,14 +106,4 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #b3653b;
-}
-
-@font-face {
-  font-family: helvetica;
-  src: url('/public/fonts/helvtica.otf');
-}
-
-@font-face {
-  font-family: kannada;
-  src: url('/public/fonts/kannada.ttf');
 }

@@ -67,11 +67,6 @@ export default function ComingSoonCard() {
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(179, 101, 59, 0.35)',
         }}
       >
-        {/* Subtle decorative inner corner borders */}
-        <div className="absolute top-3 left-3 w-4 h-4 border-t border-l border-white/20 pointer-events-none" />
-        <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-white/20 pointer-events-none" />
-        <div className="absolute bottom-3 left-3 w-4 h-4 border-b border-l border-white/20 pointer-events-none" />
-        <div className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-white/20 pointer-events-none" />
 
         {/* Brand Header */}
         <div className="flex flex-col items-center justify-center text-center">
@@ -80,12 +75,12 @@ export default function ComingSoonCard() {
           <Image src="/images/logo.svg" alt="Lotus" width={200} height={200} />
 
           {/* Section Heading */}
-          <h2 className="font-cinzel text-2xl sm:text-3xl md:text-[2.1rem] tracking-[0.18em] font-normal text-white uppercase mb-4 sm:mb-5">
+          <h2 className="font-kannada text-2xl sm:text-3xl md:text-[2.1rem] tracking-[0.18em] font-normal text-white uppercase mb-4 sm:mb-5">
             LAUNCHING SOON
           </h2>
 
           {/* Brand Description */}
-          <p className="text-sm sm:text-[15px] text-white/90 max-w-[480px] mb-8 sm:mb-10 text-center px-1 font-[helvetica]">
+          <p className="text-sm sm:text-[15px] text-white/90 max-w-[480px] mb-8 sm:mb-10 text-center px-1 font-helvetica tracking-wider">
             CHUNNIINDIA is getting ready to make its debut. Sign up below to be the first to know about our launch, new updates, and everything we&apos;re creating behind the scenes.
           </p>
         </div>
@@ -96,10 +91,10 @@ export default function ComingSoonCard() {
             <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-white/10 flex items-center justify-center text-white">
               <CheckCircle2 className="w-7 h-7 text-[#f5eee6]" />
             </div>
-            <h3 className="font-cinzel text-lg sm:text-xl tracking-wider text-white mb-2">
+            <h3 className="font-kannada text-lg sm:text-xl tracking-wider text-white mb-2">
               YOU&apos;RE ON THE LIST
             </h3>
-            <p className="text-sm font-light text-white/90 mb-4 leading-relaxed">
+            <p className="text-sm font-light text-white/90 mb-4 leading-relaxed font-helvetica">
               {message}
             </p>
             <button
@@ -107,7 +102,7 @@ export default function ComingSoonCard() {
                 setStatus('idle');
                 setMessage('');
               }}
-              className="text-xs tracking-widest uppercase underline underline-offset-4 text-white/80 hover:text-white transition-colors"
+              className="text-xs tracking-widest uppercase underline underline-offset-4 text-white/80 hover:text-white transition-colors font-helvetica"
             >
               Sign up with another email
             </button>
@@ -128,7 +123,7 @@ export default function ComingSoonCard() {
                   placeholder="ENTER YOUR EMAIL"
                   required
                   disabled={status === 'loading'}
-                  className="w-full h-12 sm:h-13 px-4 bg-transparent text-white placeholder-white/70 text-xs sm:text-sm tracking-widest uppercase border border-white/60 focus:border-white focus:outline-none transition-all duration-300 rounded-none"
+                  className="w-full font-helvetica h-12 sm:h-13 px-4 bg-transparent text-white placeholder-white/70 text-xs sm:text-sm tracking-widest uppercase border border-white/60 focus:border-white focus:outline-none transition-all duration-300 rounded-none"
                 />
               </div>
 
@@ -136,15 +131,15 @@ export default function ComingSoonCard() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="h-12 w-fit sm:h-13 px-6 sm:px-7 bg-[#f5eee6] hover:bg-white text-[#1a1614] text-xs sm:text-sm font-medium uppercase transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-75 flex items-center justify-center cursor-pointer active:scale-[0.99] whitespace-nowrap rounded-none"
+                className="h-12 md:w-fit sm:h-13 px-6 sm:px-7 bg-[#f5eee6] hover:bg-white text-[#1a1614] text-xs sm:text-sm font-medium uppercase transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-75 flex items-center justify-center cursor-pointer active:scale-[0.99] whitespace-nowrap rounded-none font-helvetica"
               >
                 {status === 'loading' ? (
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2 font-helvetica">
                     <Loader2 className="w-4 h-4 animate-spin text-[#1a1614]" />
                     <span className="text-[11px]">SENDING...</span>
                   </span>
                 ) : (
-                  <span>KEEP ME POSTED</span>
+                  <span className='tracking-wider'>KEEP ME POSTED</span>
                 )}
               </button>
             </div>
