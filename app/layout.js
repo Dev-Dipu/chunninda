@@ -38,6 +38,14 @@ export const metadata = {
   description:
     "CHUNNIINDIA is getting ready to make its debut. Sign up to be the first to know about our launch, new updates, and exclusive heritage collections.",
   keywords: ["CHUNNIINDIA", "luxury chunni", "Indian couture", "heritage dupatta", "launching soon"],
+  icons: {
+    icon: [
+      { url: "/images/favicon.png" },
+      { url: "/images/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/images/favicon.png",
+    apple: "/images/favicon.png",
+  },
   openGraph: {
     title: "CHUNNIINDIA — Launching Soon",
     description: "Handcrafted Indian Couture & Heritage Drapes. Join the priority circle.",
