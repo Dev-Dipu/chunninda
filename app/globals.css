@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --background: #120f0d;
+  --foreground: #f4ece1;
+  --terracotta: #b3653b;
+  --terracotta-dark: #984e28;
+  --terracotta-light: #c87a50;
+  --cream: #f5eee6;
+  --cream-soft: #ede3d7;
+  --gold-accent: #d4af37;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-dark: var(--terracotta-dark);
+  --color-terracotta-light: var(--terracotta-light);
+  --color-cream: var(--cream);
+  --color-cream-soft: var(--cream-soft);
+  --color-gold: var(--gold-accent);
+  --font-cinzel: var(--font-cinzel), "Cinzel", Georgia, serif;
+  --font-cormorant: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-montserrat: var(--font-montserrat), "Montserrat", -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Luxury Heading styles */
+.font-cinzel {
+  font-family: var(--font-cinzel), Georgia, serif;
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat), -apple-system, sans-serif;
+}
+
+/* Background Morph & Ken Burns Animation */
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.06) translate(-1%, 1%);
+  }
+  100% {
+    transform: scale(1.02) translate(1%, -1%);
+  }
+}
+
+.animate-ken-burns {
+  animation: kenBurnsZoom 18s ease-in-out infinite alternate;
+}
+
+/* Subtle pulse for stay tuned */
+@keyframes luxuryPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse-slow {
+  animation: luxuryPulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Scrollbar for Admin Table */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(20, 16, 14, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: #4a3e37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b3653b;
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url('/public/fonts/helvtica.otf');
+}
+
+@font-face {
+  font-family: kannada;
+  src: url('/public/fonts/kannada.ttf');
+}

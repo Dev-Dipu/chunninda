@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sub_1788253453465_tdz2l",
+    "email": "test@gmail.com",
+    "createdAt": "2026-09-01T09:04:13.464Z",
+    "formattedDate": "Sep 1, 2026",
+    "formattedTime": "02:34 PM",
+    "emailSent": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "ip": "::1",
+    "emailLog": "simulated"
+  },
+  {
+    "id": "sub_1788253355385_ajwx3",
+    "email": "royal.patron@chunninda.luxury",
+    "createdAt": "2026-09-01T09:02:35.384Z",
+    "formattedDate": "Sep 1, 2026",
+    "formattedTime": "02:32 PM",
+    "emailSent": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "ip": "::1",
+    "emailLog": "simulated"
+  },
+  {
+    "id": "sub_1788253028081_ofgzd",
+    "email": "test.patron@example.com",
+    "createdAt": "2026-09-01T08:57:08.068Z",
+    "formattedDate": "Sep 1, 2026",
+    "formattedTime": "02:27 PM",
+    "emailSent": true,
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9168",
+    "ip": "::1",
+    "emailLog": "simulated"
+  },
+  {
+    "id": "sub_1788249505548_3hv2x",
+    "email": "vip.patron@royalculture.in",
+    "createdAt": "2026-09-01T07:58:25.548Z",
+    "formattedDate": "Sep 1, 2026",
+    "formattedTime": "01:28 PM",
+    "emailSent": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "ip": "::1",
+    "emailLog": "simulated"
+  }
+]
